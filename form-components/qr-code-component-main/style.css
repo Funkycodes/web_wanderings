@@ -1,0 +1,43 @@
+:root {
+    font-size: 15px;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    text-align:center;
+    background-color:hsl(212, 45%, 89%);
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    margin: auto;
+    width: 375px;
+}
+
+.card{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap:.8rem;
+    border-radius: 1.4em;
+    padding: 1.2rem;
+    background-color: #fff;
+}
+img:only-of-type {
+    max-width: 100%;
+    border-radius: .7rem;
+}
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    color:hsl(220,15%,55%);
+    margin: 0 .6rem 1.5rem 0.6rem;
+}
+h1{
+    font-size: 1.2rem;
+    color:hsl(219,44%,22%);
+    font-weight: 700;
+    margin: .8rem .6rem .6rem .6rem;
+}
