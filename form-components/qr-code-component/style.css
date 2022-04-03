@@ -5,6 +5,7 @@
     font-size: 15px;
 }
 body {
+    font-family: 'Outfit', sans-serif;
     height: 100vh;
     width: 100vw;
     text-align:center;
@@ -14,7 +15,7 @@ body {
 }
 .container {
     margin: auto;
-    width: 375px;
+    max-width: 375px;
 }
 
 .card{
@@ -24,7 +25,7 @@ body {
     flex-direction: column;
     gap:1.2rem;
     border-radius: 1.4em;
-    padding: 1.2rem;
+    padding: 1.2rem 1.3rem;
     background-color: #fff;
 }
 img:only-of-type {
@@ -36,11 +37,14 @@ p{
     font-weight: 400;
     font-size: 1rem;
     color:hsl(220,15%,55%);
-    margin: 0 .6rem 1.5rem 0.6rem;
+    margin: 0 .5rem 1.5rem 0.5rem;
 }
 h1{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color:hsl(219,44%,22%);
     font-weight: 700;
-    margin: .8rem .6rem .6rem .6rem;
+    margin: .3rem .5rem 0 .5rem;
+}
+a:link {
+    color: hsl(212, 45%, 89%);
 }

@@ -55,6 +55,12 @@ form {
     outline: none;
 }
 input:focus{
+    border-color: blue;
+}
+input:invalid{
+    border-color: red;
+}
+input[type='email']:valid:focus {
     border-color: green;
 }
 .text-input button {
