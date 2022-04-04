@@ -1,0 +1,54 @@
+
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap:1rem;
+    text-align:center;
+}
+h1 {
+    color:hsl(300, 43%, 22%);
+}
+.container > p {
+    color:hsl(303, 10%, 53%);
+}
+
+.rating-card {
+  background-color: hsl(300,24%,96%);
+  padding: 1.5rem;
+  border-radius: .5em;
+  width:calc(320px - 3rem) ;
+}
+.rating-card span {
+    width: 100%;
+    background-image: url('./images/icon-star.svg');
+    background-position: center;
+    background-repeat: repeat-x;
+}
+.comment-card {
+    text-align: left;
+    width: calc(320px - 3rem);
+    padding:1.5rem;
+    background-color:hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    border-radius: .5em;
+}
+.comment-card-profile {
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+    flex: 1 1;
+    color: hsl(333, 80%, 67%);
+}
+.profile-image {
+    border-radius: 50%;
+    width: 44px;
+}
+.name {
+    color: hsl(0,0%,100%);
+    display: block;
+    margin-bottom: .3rem;
+}

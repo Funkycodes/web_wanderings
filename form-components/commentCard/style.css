@@ -4,6 +4,7 @@
 }
 .card {
     width: 540px;
+    margin: auto;
     border-radius: .5rem;
     background-color:black;
     padding: 1rem;
