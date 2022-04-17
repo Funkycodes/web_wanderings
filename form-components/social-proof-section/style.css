@@ -1,4 +1,9 @@
-
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .container {
     max-width: 320px;
     margin: 0 auto;
@@ -20,7 +25,7 @@ h1 {
   background-color: hsl(300,24%,96%);
   padding: 1.5rem;
   border-radius: .5em;
-  width:calc(320px - 3rem) ;
+  width:calc(320px - 2.8rem);
 }
 .rating-card span {
     width: 100%;
@@ -51,4 +56,10 @@ h1 {
     color: hsl(0,0%,100%);
     display: block;
     margin-bottom: .3rem;
+}
+@media (min-width: 480px)
+{
+    .container {
+        max-width: 480px;
+    }
 }

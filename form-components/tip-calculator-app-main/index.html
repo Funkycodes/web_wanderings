@@ -5,40 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+      display: flex;
+      align-items: center;
+    }
+    .attribution i {
+      color: orange;
+      font-size: 24px;
+      margin-left: .3rem;
+    }
   </style>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" media="all">
 </head>
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="image">
+    <img src="./images/logo.svg" alt="">
   </div>
+  <div class="container">
+    <div class="left">
+      <div class="bill-amount_container">
+        <h2>BILL</h2>
+        <div class="bill-input-container">
+          <i class="fas fa-dollar-sign"></i>
+          <input type="number" name="" id="bill-amount-input" placeholder="0">
+        </div>
+      </div>
+      <div class="percentage-amount_container">
+        <h2>Select Tip %</h2>
+        <div class="percentage-amount_buttons">
+          <ul>
+            <li><button class="percentage-button" value="0.05">5%</button></li>
+            <li><button class="percentage-button" value="0.1">10%</button></li>
+            <li><button class="percentage-button" value="0.15">15%</button></li>
+            <li><button class="percentage-button" value="0.25">25%</button></li>
+            <li><button class="percentage-button" value="0.5">50%</button></li>
+            <li><button class="custom-button" contenteditable>Custom</button></li>
+          </ul>
+        </div>
+      </div>
+      <div class="people">
+        <h2>Number of People</h2>
+        <div class="people-input-container">
+          <i class="fas fa-user"></i>
+          <input class="people-input" type="number" placeholder="0">
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="results-container">
+        <div>
+          <p>
+            Tip Amount <span>/ person</span>
+          </p>
+          <span class="amount"><i class="fas fa-dollar-sign"></i><span id="tip">0</span></span>
+        </div>
+        <div>
+          <p>
+            Total <span>/ person</span>
+          </p>
+          <span class="amount"><i class="fas fa-dollar-sign"></i><span id="total">0</span></span>
+        </div>
+      </div>
+      <button id="reset">RESET</button>
+  </div>
+  </div>
+  <div class="attribution">
+    Coded by <a href="#">theMaskedOtaku<i class="fas fa-user-ninja"></i></a>
+  </div>
+  <script src="./app.js"></script>
 </body>
 </html>
