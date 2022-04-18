@@ -1,0 +1,115 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(308, 69%, 71%);
+    --l-font:400;
+    --b-font:600;
+}
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--violet);
+    background-image: url('./images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 375px;
+    background-position: .2rem -20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.container {
+    width: 86%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo {
+    width:40%;
+    align-self: flex-start;
+}
+.logo img {
+    max-width: 100%;
+}
+.illustration {
+    width: 100%;
+}
+.illustration img {
+    max-width: 100%;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.flex h1 {
+    font-size: 1.5rem;
+}
+.flex button {
+    height: 2.5rem;
+    width: 68%;
+    border: none;
+    border-radius: 1.2rem;
+    margin-top: .8rem;
+    background-color: #fff;
+    color: var(--violet);
+}
+button:hover {
+    background-color: var(--soft-magenta);
+    color: #fff;
+}
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    justify-self: flex-end;
+}
+a {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+@media (min-width:480px)
+{
+    body{
+        background-image: url('./images/bg-mobile.svg');
+        background-size: cover;
+        background-position: center center;
+    }
+    .container {
+        width: 1110px;
+    }
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    .illustration {
+        flex-grow: 1;
+    }
+    .flex {
+        text-align: left;
+        flex-grow:0;
+        align-items: start;
+    }
+    .flex button {
+        width: 40%;
+    }
+    .links {
+        align-self: flex-end;
+    }
+}
