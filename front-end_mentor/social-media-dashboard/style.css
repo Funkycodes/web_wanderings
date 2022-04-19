@@ -53,6 +53,9 @@ body {
     background-color: var(--dtheme-white);
     font-family: "Inter", sans-serif;
 }
+body.dark {
+  background-color: var(--dtheme-background);
+}
 div,
 p,
 h1,h2,h3 {
@@ -81,6 +84,12 @@ h1,h2,h3 {
 .title h1 {
     font-size: 1.5rem;
     color: var(--ltheme-dark-text);
+}
+.title.dark {
+  color: var(--dtheme-text);
+}
+.title.dark h1 {
+  color: var(--dtheme-white);
 }
 .title * {
     margin:0;
@@ -142,6 +151,9 @@ h1,h2,h3 {
     background-color: var(--ltheme-card-bg);
     border-radius: .5rem;
 }
+.card.dark {
+  background-color: var(--dtheme-card-bg);
+}
 .glance .card {
     border: 3px solid var(--facebook);
     border-width: .25rem 0 0 0;
@@ -180,6 +192,10 @@ h1,h2,h3 {
     align-items: center;
     gap: .3rem;
     color: var(--ltheme-light-text);
+    font-size: 12px;
+}
+.glance .card.dark>h2 {
+  color: var(--dtheme-text);
 }
 .stats .number {
     font-size: 3rem;
@@ -187,11 +203,17 @@ h1,h2,h3 {
     margin-top: 1.5rem;
     color: var(--ltheme-dark-text);
 }
+.card.dark .stats .number {
+  color: var(--dtheme-white);
+}
 .stats .rep {
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: var(--ltheme-dark-text);
+}
+.card.dark .stats .rep {
+  color: var(--dtheme-text);
 }
 .stats .frame {
     font-size: 1rem;    
@@ -220,11 +242,17 @@ h1,h2,h3 {
     font-weight: 700;
     color: var(--ltheme-light-text);
 }
+.overview .card.dark div:first-child {
+  color: var(--dtheme-text);
+}
 .overview .card div:nth-child(2) {
     font-size: 1.8rem;
     align-items:baseline;
     color: var(--ltheme-dark-text);
     font-weight: 700;
+}
+.overview .card.dark div:nth-child(2) {
+  color: var(--dtheme-white)
 }
 .overview span:nth-child(2) {
     font-size: 1rem;
