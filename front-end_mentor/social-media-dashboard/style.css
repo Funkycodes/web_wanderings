@@ -134,6 +134,9 @@ h1,h2,h3 {
     justify-content: space-between;
     color: var(--ltheme-light-text);
 }
+body.dark .theme {
+  color:  var(--dtheme-white);
+}
 .grid {
     display: grid;
     grid-template-columns: 1fr;
